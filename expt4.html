@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="row bg-secondary text-black">
+            <div>
+                <!-- <img src="p5.jpg" class="rounded m-4" width="100" height="80"> -->
+                <table><thead><tr>
+                    <th>
+                        <img src="data:image/jpeg;base64,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" data-deferred="1" class="rg_i Q4LuWd" jsname="Q4LuWd" width="180" height="180" alt="Alex's Bake Shop - Home | Facebook" data-atf="true" data-iml="1275.8999996185303"
+                        class="rounded m-6" width="100" height="80">
+                    </th>
+                    <th><h2 style="color:rgb(235, 232, 241)">ALEX BAKES</h2></th>
+                    <th><nav class="navbar navbar-expand-sm bg-secondary">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="button" class="btn btn-success">Home</button>
+                            <button type="button" class="btn btn-success">Services</button>
+                            <button type="button" class="btn btn-success">Clients</button>
+                            <button type="button" class="btn btn-success">Contact Us</button>
+                            <button type="button" class="btn btn-danger">Login/Sign Up</button>
+                        </nav></th>
+                    <th>
+                        <input class=”form-control” type=”text” placeholder=”Search”>
+                            <button type="button" class="btn btn-success">Submit</button>
+                    </th>
+                </tr></thead></table>
+            </div>
+        </div>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="row bg-secondary col-12"> 
+            <div class="container-fluid col-12">
+                <div id="demo" class="carousel slide" data-bs-ride="'carousal">
+                    <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    
+              <!-- Indicators/dots -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+              </div>
+              <!-- The slideshow/carousel -->
+              <span class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://thestayathomechef.com/wp-content/uploads/2017/12/Most-Amazing-Chocolate-Cupcakes-2-small.jpg" alt="Oval Polished" class="d-md" style="width:100%" style="height:10%">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>CUPCAKES<p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://c4.wallpaperflare.com/wallpaper/319/719/694/pancakes-4k-ultra-high-definition-wallpaper-preview.jpg" alt="pound" class="d-md" style="width:100%" style="height:10%">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>PANCAKES</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://p4.wallpaperbetter.com/wallpaper/303/713/146/food-cake-dessert-pastry-wallpaper-preview.jpg" alt="ren" class="d-md" style="width:100%" style="height:10%">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>PASTRIES</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://www.readersdigest.ca/wp-content/uploads/2015/10/halloween-candy-slow-down-sugar-rush-scaled.jpg?fit=700,508" alt="dirham" class="d-md" style="width:100%" style="height:10%">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Forth slide label</h5>
+                    <p>SUGARCANDIES</p>
+                  </div>
+                </div>
+              </span>
+              <!-- Left and right controls/icons -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                <div class="container-fluid bg-default">
+                    <div class="row">
+                    <div class="col-6 border border-primary rounded">
+                        <form class="form-inline">
+                            <H4 style="text-align:center">REGISTRATION FORM</H4>
+                            <table><thead><tr>
+                                <th><label class="mb-2">Email : </label>
+                                    <input type="text" class="form-control mb-2" placeholder="type email here"></th>
+                                <th><label class="mb-2">Password : </label>
+                                    <input type="password" class="form-control mb-2" placeholder="type password here"></th>
+                            </tr></thead></table>
+                            <label class="mb-2">Address : </label>
+                            <input type="text" class="form-control mb-2" placeholder="type name here">
+                            <label class="mb-2">Address2 : </label>
+                            <input type="text" class="form-control mb-2" placeholder="type address here">
+                            <table><thead><tr>
+                                <th><label class="mb-2">City : </label>
+                                    <input type="text" class="form-control mb-2" placeholder="city"></th>
+
+                                <th><label class="mb-2">State : </label>
+                                    <select type="checkbox" class="form-control mb-2">
+                                        <option value="TN">TN</option>
+                                        <option value="KL">KL</option>
+                                        <option value="TS">TS</option>
+                                        <option value="KA">KA</option>
+                                        <option value="HB">HB</option>
+                                        <option value="GT">GT</option>
+                                    </select></th>
+                                <th>                    <label class="mb-2">Zip-code : </label>
+                                    <input type="text" class="form-control mb-2" placeholder="zipcode"></th>
+                            </tr></thead></table>
+                            <div class="form-check">
+                                <label class="form-check-label" type="checkbox">check me out</label>
+                            </div>
+                        <input type="submit" class="btn-success mb-2" value="Submit">
+                        </form>
+                    </div>
+                    <div class="container-fluid col">
+                        <table class="table table-hover table-bordered text-center">
+                            <thead>
+                                <tr class="bg-primary text-white">
+                                    <th>S.no</th>
+                                    <th>Reg.no</th>
+                                    <th>Name of the Participant</th>
+                                    <th>Collaborative Activity</th>
+                                    <th>Collaborating Agency</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>CS001</td>
+                                    <td>BENNET PRAVEEN</td>
+                                    <td>PDA</td>
+                                    <td>CADD Center</td>
+                                </tr>                        
+                                <tr>
+                                    <td>2</td>
+                                    <td>CS011</td>
+                                    <td>JUBAL CHANDY</td>
+                                    <td>PDA</td>
+                                    <td>CADD Centre</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>CS013</td>
+                                    <td>NIVED MELVIN</td>
+                                    <td>PDA</td>
+                                    <td>CADD Centre</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>CS802</td>
+                                    <td>JOEL JOJO</td>
+                                    <td>PDA</td>
+                                    <td>CADD Centre</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>CS222</td>
+                                    <td>ALAN JACOB</td>
+                                    <td>PDA</td>
+                                    <td>CADD Centre</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>CS430</td>
+                                    <td>JEHOSH JOSEPH</td>
+                                    <td>PDA</td>
+                                    <td>CADD Centre</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>CS333</td>
+                                    <td>ANDREW JOSE</td>
+                                    <td>PDA</td>
+                                    <td>CADD Centre</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>CS022</td>
+                                    <td>BENSTON DANIEL</td>
+                                    <td>PDA</td>
+                                    <td>CADD Centre</td>
+                                </tr>
+                            </thead>
+                        </table>
+                        <!------------------------------------------------>
+                        
+                    </div>
+                </div>
+            <!------------------------------------------------------>
+            <table class="table table-hover table-bordered text-center">
+                <thead>
+                    <tr><div>
+                        <br/><br/><br/>
+                        <hr/><hr/>
+                        <br/><br/><br/>
+                    </div></tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </thead>
+            </table>
+            <h3 style="color:rgb(23, 23, 24)">BAKERY</h3>
+            <p>A bakery is an establishment that produces and sells flour-based food baked in an oven such as bread, cookies, cakes, donuts, pastries, and pies. Some retail bakeries are also categorized as cafés, serving coffee and tea to customers who wish to consume the baked goods on the premises.Baked goods have been around for thousands of years. The art of baking was developed early during the Roman Empire. It was a highly famous art as Roman citizens loved baked goods and demanded them frequently for important occasions such as feasts and weddings. Because of the fame of the art of baking, around 300 BC, baking was introduced as an occupation and respectable profession for Romans. Bakers began to prepare bread at home in an oven, using mills to grind grain into flour for their breads. The demand for baked goods persisted, and the first bakers' guild was established in 168 BC in Rome. The desire for baked goods promoted baking throughout Europe and expanded into eastern parts of Asia. Bakers started baking bread and other goods at home and selling them on the streets.
+
+                </p>
+          </div>
+    </body>
+</html>
